@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
+    <menu id="application-cees"
+          insertBefore="administration">
+        <item screen="cees$SystemEmail.browse"/>
+        <item screen="cees$EmailTemplate.browse"/>
+        <item screen="cees$EmailMessage.browse"/>
+    </menu>
+</menu-config>

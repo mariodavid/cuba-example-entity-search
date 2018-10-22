@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<screen-config xmlns="http://schemas.haulmont.com/cuba/screens.xsd">
+    <screen id="cees$SystemEmail.browse"
+            template="com/company/cees/web/systememail/system-email-browse.xml"/>
+    <screen id="cees$SystemEmail.edit"
+            template="com/company/cees/web/systememail/system-email-edit.xml"/>
+    <screen id="cees$EmailTemplate.browse"
+            template="com/company/cees/web/emailtemplate/email-template-browse.xml"/>
+    <screen id="cees$EmailMessage.browse"
+            template="com/company/cees/web/emailmessage/email-message-browse.xml"/>
+    <screen id="cees$EmailMessage.edit"
+            template="com/company/cees/web/emailmessage/email-message-edit.xml"/>
+    <screen id="mainWindow"
+            template="com/company/cees/web/screens/ext-mainwindow.xml"/>
+</screen-config>

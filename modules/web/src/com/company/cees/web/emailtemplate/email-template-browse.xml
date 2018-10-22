@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://browseCaption"
+        class="com.company.cees.web.emailtemplate.EmailTemplateBrowse"
+        focusComponent="emailTemplatesTable"
+        lookupComponent="emailTemplatesTable"
+        messagesPack="com.company.cees.web.emailtemplate">
+    <dsContext>
+        <groupDatasource id="emailTemplatesDs"
+                         class="com.company.cees.entity.email.EmailTemplate"
+                         view="_local">
+            <query>
+                <![CDATA[select e from cees$EmailTemplate e]]>
+            </query>
+        </groupDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="emailTemplatesTable"
+            spacing="true">
+        <filter id="filter"
+                applyTo="emailTemplatesTable"
+                datasource="emailTemplatesDs">
+            <properties include=".*"/>
+        </filter>
+        <groupTable id="emailTemplatesTable"
+                    width="100%">
+            <actions>
+                <action id="create"/>
+                <action id="edit"/>
+                <action id="remove"/>
+            </actions>
+            <columns>
+                <column id="name"/>
+                <column id="title"/>
+            </columns>
+            <rows datasource="emailTemplatesDs"/>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn"
+                        action="emailTemplatesTable.create"/>
+                <button id="editBtn"
+                        action="emailTemplatesTable.edit"/>
+                <button id="removeBtn"
+                        action="emailTemplatesTable.remove"/>
+            </buttonsPanel>
+        </groupTable>
+    </layout>
+</window>
