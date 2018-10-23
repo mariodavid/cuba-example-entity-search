@@ -2,7 +2,7 @@
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         caption="msg://browseCaption"
         class="com.company.cees.web.emailtemplate.EmailTemplateBrowse"
-        focusComponent="emailTemplatesTable"
+        focusComponent="filter"
         lookupComponent="emailTemplatesTable"
         messagesPack="com.company.cees.web.emailtemplate">
     <dsContext>
@@ -19,6 +19,7 @@
     <layout expand="emailTemplatesTable"
             spacing="true">
         <filter id="filter"
+                defaultMode="fts"
                 applyTo="emailTemplatesTable"
                 datasource="emailTemplatesDs">
             <properties include=".*"/>
