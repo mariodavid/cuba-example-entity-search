@@ -7,6 +7,9 @@ CUBA platform example that shows how to use the rich search addon to search for 
 
 
 #### Usage in combination with FTS
+
+See branch: [entits-search-with-fts](https://github.com/mariodavid/cuba-example-entity-search/tree/entits-search-with-fts)
+
 ![rich-search-addon-with-fts-workflow](https://github.com/mariodavid/cuba-example-entity-search/blob/master/img/rich-search-addon-with-fts-workflow.gif)
 
 NOTE: to make FTS work, activate FTS functionality before (see: https://doc.cuba-platform.com/fts-6.10/fts.html#quick_start)
